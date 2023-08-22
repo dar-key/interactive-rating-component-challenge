@@ -43,7 +43,7 @@ const submitButton = document.getElementById('submit-btn');
 
 submitButton.addEventListener('click', () => {
     if (selectedIndex !== null) {
-        document.getElementById('interactive-rating-component').innerHTML = '';
+        document.getElementById('interactive-rating-component').remove();
         let temp = document.getElementsByTagName("template")[0];
         let clon = temp.content.cloneNode(true);
         document.body.appendChild(clon);

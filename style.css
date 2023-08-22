@@ -60,9 +60,12 @@ body {
     color: hsl(217, 12%, 63%);
 }
 
+
 #interactive-rating-component {
+    height: 100%;
     padding: 6% 4%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -77,7 +80,7 @@ body {
 #interactive-rating-component .star {
     background-color:  rgb(45, 51, 70);
     border-radius: 50%;
-    padding: 12px;;
+    padding: 12px;
 }
 
 #interactive-rating-component h3 {
