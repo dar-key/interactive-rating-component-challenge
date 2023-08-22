@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: hsl(216, 12%, 8%);
+}
+
+#thank-you-state {
+    padding: 6% 4%;
+    display: flex;
+    justify-content: center;
+}
+
+#thank-you-state div {
+    background-color: rgb(37, 45, 55);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 25px;
+}
+
+#thank-you-state div img {
+    margin: 0 25%;
+}
+
+#thank-you-state .select,
+#thank-you-state .info,
+#thank-you-state h3 {
+    text-align: center;
+}
+
+#thank-you-state h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+#thank-you-state .select-div {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding:0;
+}
+
+#thank-you-state .select {
+    padding: 6px 18px;
+    font-size: 1rem;
+    border-radius: 1000px;
+    background-color:rgb(45, 51, 70);
+    color:hsl(25, 97%, 53%);
+    display: inline;
+}
+
+#thank-you-state .info {
+    font-size: 1rem;
+    color: hsl(217, 12%, 63%);
+}
+
+#interactive-rating-component {
+    padding: 6% 4%;
+    display: flex;
+    justify-content: center;
+}
+
+#interactive-rating-component div {
+    background-color: rgb(37, 45, 55);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px 25px;
+}
+
+#interactive-rating-component .star {
+    background-color:  rgb(45, 51, 70);
+    border-radius: 50%;
+    padding: 12px;;
+}
+
+#interactive-rating-component h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+#interactive-rating-component p {
+    color: hsl(217, 12%, 63%);
+    margin: 10px 0;
+    line-height: 1.4rem;
+    font-size: 1rem;
+}
+
+#interactive-rating-component .ratings {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 1.7rem 0;
+}
+
+.rating-num {
+    background-color:  rgb(45, 51, 70);
+    border-radius: 50%;
+    border: 0;
+    padding: 12px;
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(217, 12%, 63%);
+    transition: 0.2s ease-in;
+}
+
+.rating-num:hover {
+    transition: 0.2s ease-out;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+    scale: 1.03;
+
+    /* background-color: hsl(217, 12%, 63%);
+    color: white; */
+}
+
+#submit-btn {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 1000px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+    opacity: 85%;
+    border: 0;
+    background-color: hsl(25, 97%, 53%);
+    transition: 0.2s ease-in;
+}
+
+#submit-btn:hover{
+    transition: 0.2s ease-out;
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+    cursor: pointer;
+    scale: 1.02;
+}
+
+@media (min-width: 600px) {
+    #interactive-rating-component div {
+        max-width: 450px;
+    }
+
+    body {
+        font-size: 19px;
+    }
+}
